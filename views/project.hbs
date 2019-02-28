@@ -1,6 +1,4 @@
 <main role="main">
-    
-
     <div class="album py-5 bg-light">
         <div class="container">
 
@@ -10,10 +8,13 @@
                     <div class="card mb-4 shadow-sm">
                         <img class="card-img-top" src="/image/image1.jpg" alt="">
                         <div class="card-body">
-                            <p class="card-text"><h6><strong>{{this.name}}</strong></h6>{{this.description}}</p>
+                            <p class="card-text">
+                                <h6><strong>{{this.name}}</strong></h6>{{this.description}}
+                            </p>
                             <div class="d-flex justify-content-between align-items-center">
                                 <div class="btn-group">
-                                    <a href="/project-details" class="btn btn-sm btn-outline-secondary">Details</a>
+                                    <a href="/project/{{this.alias}}"
+                                        class="btn btn-sm btn-outline-secondary">Details</a>
                                     <a href="#" class="btn btn-sm btn-outline-secondary">Github</a>
                                 </div>
 
@@ -25,5 +26,5 @@
             </div>
         </div>
     </div>
-    
+
 </main>
